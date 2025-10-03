@@ -73,10 +73,10 @@
     footer a{color:var(--accent);text-decoration:none;font-weight:600}
     /* Improve icon legibility */
     .hero-ico{background:#eaf2ff;border:1px solid #cfe0ff;border-radius:16px;padding:6px;box-shadow:0 6px 16px rgba(2,6,23,.08)}
-    [data-theme="dark"] .hero-ico{background:transparent;border-color:transparent;box-shadow:none}
+    [data-theme="dark"] .hero-ico{background:radial-gradient(120% 120% at 50% 0%, rgba(125,211,252,.28) 0%, rgba(59,130,246,.22) 60%, rgba(30,58,138,.18) 100%);border-color:#334155;box-shadow:0 12px 24px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.06)}
     .ico img, .hero-ico{image-rendering:auto;}
     .ico img{width:52px;height:52px;filter: drop-shadow(0 2px 1px rgba(2,6,23,.25));}
-    [data-theme="dark"] .ico img{filter: drop-shadow(0 3px 2px rgba(0,0,0,.5));}
+    [data-theme="dark"] .ico img{filter: drop-shadow(0 4px 3px rgba(0,0,0,.6)) brightness(1.12) contrast(1.15);}
   </style>
   <style>
     /* Dark mode support via data-theme attribute */
@@ -87,7 +87,7 @@
     [data-theme="dark"] .current,[data-theme="dark"] .forecast{border-color:#1f2937}
     [data-theme="dark"] .meta div{background:#0e1627;border-color:#1f2937}
     [data-theme="dark"] .day{background:#0e1627;border-color:#1f2937}
-    [data-theme="dark"] .day .ico{background:transparent;border-color:#1f2937;box-shadow:none}
+    [data-theme="dark"] .day .ico{background:radial-gradient(120% 120% at 50% 0%, rgba(125,211,252,.28) 0%, rgba(59,130,246,.22) 60%, rgba(30,58,138,.18) 100%);border-color:#334155;box-shadow:0 8px 18px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.06)}
     [data-theme="dark"] .day .name,[data-theme="dark"] .day .t{color:var(--text)}
   </style>
 </head>
@@ -360,6 +360,3 @@
   </script>
 </body>
 </html>
-
-
-
